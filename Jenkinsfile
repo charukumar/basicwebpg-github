@@ -17,7 +17,7 @@ node {
 
      docker.withRegistry('', 'dockerHub') {
          sh "docker login -u ${USERNAME} -p ${PASSWORD}"
-         sh "docker push charukumar/devops-test:${env.BUILD_ID}")
+         sh "docker push charukumar/devops-test:${env.BUILD_ID}"
      }
      echo "Trying to push docker build to dockerhub"   
         
