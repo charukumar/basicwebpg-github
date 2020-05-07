@@ -5,7 +5,7 @@ node {
      }
 
      stage('Run docker image') {
-          sh "docker run --rm -d -p 2000:8888 charukumar/devops-test:16"
+          sh "docker run -p 3000:8888 -d charukumar/devops-test:16"
      }
  }
 
